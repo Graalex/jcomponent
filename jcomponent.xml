@@ -5,10 +5,15 @@
     <author>Grigorchuk Aleksandr</author>
     <authorEmail>aleksandr.grigorchuk@gmail.com</authorEmail>
     <authorUrl>http://www.graleks.com.ua</authorUrl>
-    <copyright>2016 (c) Grogorchuk Aleksandr</copyright>
+    <copyright>Copyright (c) 2016. Grogorchuk Aleksandr</copyright>
     <license>MIT License; see LICENSE</license>
     <version>1.0.0</version>
     <description>COM_JCOMPONENT_DESC</description>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
     <update>
         <schemas>
             <schemapath type="mysql">sql/updates/mysql</schemapath>
@@ -17,6 +22,9 @@
     <files folder="site">
         <filename>index.html</filename>
         <filename>jcomponent.php</filename>
+        <filename>controller.php</filename>
+        <folder>models</folder>
+        <folder>views</folder>
     </files>
     <administration>
         <menu link='index.php?option=com_jcomponent'>COM_JCOMPONENT_NAME</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<metadata>
+	<layout title="COM_JCOMPONENT_VIEW_DEFAULT_TITLE"
+			message="COM_JCOMPONENT_VIEW_DEFAULT_DESC" />
+	<fields name="request">
+		<fieldset name="request">
+			<field name="id"
+				   type="list"
+				   label="COM_JCOMPONENT_FIELD_LABEL"
+				   description="COM_JCOMPONENT_FIELD_DESC"
+				   default="1" >
+				<option value="1">COM_JCOMPONENT_FIELD_VALUE_ONE</option>
+				<option value="2">COM_JCOMPONENT_FIELD_VALUE_TWO</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>
