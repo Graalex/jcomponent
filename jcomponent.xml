@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<extension type="component" version="3.1" method="upgrade">
+    <name>COM_JCOMPONENT_NAME</name>
+    <creationDate>April 2016</creationDate>
+    <author>Grigorchuk Aleksandr</author>
+    <authorEmail>aleksandr.grigorchuk@gmail.com</authorEmail>
+    <authorUrl>http://www.graleks.com.ua</authorUrl>
+    <copyright>2016 (c) Grogorchuk Aleksandr</copyright>
+    <license>MIT License; see LICENSE</license>
+    <version>1.0.0</version>
+    <description>COM_JCOMPONENT_DESC</description>
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>jcomponent.php</filename>
+    </files>
+    <administration>
+        <menu link='index.php?option=com_jcomponent'>COM_JCOMPONENT_NAME</menu>
+        <files folder="admin">
+            <filename>index.html</filename>
+            <filename>jcomponent.php</filename>
+            <folder>sql</folder>
+        </files>
+    </administration>
+</extension>
